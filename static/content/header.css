@@ -1,0 +1,150 @@
+*, *:before, *:after {
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+ 
+  display: block;
+}
+
+/* * * HEADER * * */
+
+.header {
+  position: relative;
+    background: linear-gradient(to right, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
+  display: block;
+  height: 80px;
+  width: 100%;
+
+}
+
+.header__container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  height: 80px;
+  width: 100%;
+}
+
+.container__title {
+  border-right: 3px solid #E9E9E9;
+  position: relative;
+  margin-left: 200px;
+  height: 80px;
+  width: 300px;
+}
+
+.title__name {
+  font-style: italic;
+  line-height: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  height: 80px;
+  color: #fff;
+}
+
+.title__name span {
+  color: #08457e;
+  padding-right: 5px
+}
+
+.container__menu {
+  font-family: 'Arial';
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+
+.container__menu a {
+  position: relative;
+  line-height: 80px;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 9px;
+  font-size: 24px;
+  z-index: 10;
+  height: 80px;
+  width: 200px;
+  color: #E9E9E9;
+}
+
+.container__menu a::after {
+  position: absolute;
+  background: #fff;
+  content: '';
+  height: 5px;
+  width: 100%;
+  margin: auto;
+  bottom: 9px;
+  right: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s;
+}
+
+.container__menu a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.container__login {
+  position: relative;
+  line-height: 80px;
+  text-align: center;
+  margin-left: auto;
+  overflow: hidden;
+  font-size: 36px;
+  height: 80px;
+  width: 80px;
+  right: 80px;
+}
+
+.container__login a {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  color: #E9E9E9;
+  height: 100%;
+  width: 100%;
+}
+
+.container__login::after {
+  position: absolute;
+  background: #fff;
+  content: '';
+  height: 5px;
+  width: 100%;
+  margin: auto;
+  bottom: 9px;
+  right: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .15s;
+}
+
+.container__login:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* * * FOOTER * * */
+
