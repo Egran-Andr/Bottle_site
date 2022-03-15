@@ -27,7 +27,7 @@
                     <input type="password" placeholder="Пароль" />
                     <input type="password" placeholder="Повторите пароль" /> 
                     <div style="display: flex;">
-                    <label for="scales">Вы согласны с <a style="color: blue" target="+blank" href="static\images\planereg.html">условием пользования</a></label>
+                    <label for="scales">Вы согласны с <a style="color: blue" target="+blank" href="/eula">условием пользования</a></label>
                     <input type="checkbox" id="scales" name="scales">
                     </div >
                 <button>Регистрация</button>

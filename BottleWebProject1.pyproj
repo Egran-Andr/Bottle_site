@@ -74,6 +74,9 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\eula.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\header.tpl" />
     <Content Include="views\login.tpl">
       <SubType>Code</SubType>

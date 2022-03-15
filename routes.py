@@ -58,9 +58,18 @@ def login():
     return dict(
         year=datetime.now().year
     )
+
 @route('/registration')
 @view('registration')
-def login():
+def registration():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )
+
+@route('/eula')
+@view('eula')
+def eula():
     """Renders the about page."""
     return dict(
         year=datetime.now().year
