@@ -2,7 +2,7 @@
 Routes and views for the bottle application.
 """
 
-from bottle import route, view
+from bottle import route, view, template, static_file
 from datetime import datetime
 
 @route('/')
@@ -14,7 +14,6 @@ def index():
         year=datetime.now().year
     )
 
-@route('/')
 @route('/tickets')
 @view('tickets')
 def billets():

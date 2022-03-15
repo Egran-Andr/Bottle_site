@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\content\index_mine.css" />
     <Content Include="static\content\login.css">
       <SubType>Code</SubType>
     </Content>
@@ -78,6 +79,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\header.tpl" />
+    <Content Include="views\index.tpl" />
     <Content Include="views\login.tpl">
       <SubType>Code</SubType>
     </Content>

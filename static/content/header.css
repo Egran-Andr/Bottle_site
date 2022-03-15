@@ -24,7 +24,7 @@ body {
 
 .header {
   position: relative;
-    background: linear-gradient(to right, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
+  background: linear-gradient(to right, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
   display: block;
   height: 80px;
   width: 100%;
