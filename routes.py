@@ -50,3 +50,11 @@ def header():
     return dict(
         year=datetime.now().year
     )
+
+@route('/login')
+@view('login')
+def login():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )

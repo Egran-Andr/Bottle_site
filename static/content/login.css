@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial;
+    background: #f6f5f7;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    letter-spacing: 1px;
+    margin: 20px 0 30px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    font-size: 14px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.container {
+    background: #08457e;
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    min-height: 520px;
+    overflow: hidden;
+    width: 768px;
+}
+
+.form-container form {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: 100%;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+    .social-container a {
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        height: 40px;
+        width: 40px;
+    }
+
+.form-container {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+}
+
+    .form-container span {
+        height: 30px;
+    }
+
+.overlay-container {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    top: 0;
+}
+
+.overlay {
+    background: linear-gradient(to top, #0D90C0 10%, #08457E 90%) no-repeat 0 0 / cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    left: 0;
+}
+
+.overlay-panel {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 40px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-right p {
+    padding: 0 20px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #08457e;
+    background: #08457e;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+    button:active {
+        transform: scale(.95);
+    }
+
+    button.ghost {
+        background: transparent;
+        border-color: #fff;
+    }
+
+.input-field {
+    position: relative;
+    line-height: 44px;
+    width: 250px;
+    height: 44px;
+    margin: 10px 0;
+}
+
+    .input-field input {
+        border-bottom: 2px solid #d3d3d3;
+        padding: 5px 0;
+        color: #d3d3d3;
+        width: 100%;
+    }
+
+    .input-field label {
+        position: absolute;
+        font-family: "Arial";
+        transition: 0.2s all;
+        color: #d3d3d3;
+        cursor: text;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .input-field input:invalid {
+        outline: 0;
+    }
+
+    .input-field input:focus,
+    .input-field input:valid {
+        border-color: #08457e;
+        color: #08457e;
+    }
+
+        .input-field input:focus ~ label,
+        .input-field input:valid ~ label {
+            font-size: 14px;
+            color: #08457e;
+            top: -24px;
+        }
