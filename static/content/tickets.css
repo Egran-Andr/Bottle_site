@@ -68,7 +68,7 @@
     right: 0;
     padding-left: 10px;
     transition: transform 0.5s, background 0.5s;
-    transform: skew(0deg, 7deg) translateY(450px); /* Equal to skewX(10deg) */
+    transform: skew(0deg, 7deg) translateY(465px); /* Equal to skewX(10deg) */
     overflow: hidden;
 }
 
