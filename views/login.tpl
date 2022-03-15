@@ -34,7 +34,7 @@
                     <div class="overlay-panel overlay-right">
                         <h1>Привет, Друг!</h1>
                         <p>Зарегестрируйся и летайте с нами уже сегодня</p>
-                        <button class="ghost" id="signUp">Регистрация</button>
+                        <a class="ghost" href="/registration" id="signUp">Регистрация</a>
                     </div>
                 </div>
             </div>

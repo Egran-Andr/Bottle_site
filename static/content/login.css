@@ -119,7 +119,7 @@ a {
     padding: 0 20px;
 }
 
-button {
+button, .ghost {
     border-radius: 20px;
     border: 1px solid #08457e;
     background: #08457e;
@@ -132,11 +132,11 @@ button {
     transition: transform 80ms ease-in;
 }
 
-    button:active {
+    button:active, .ghost:active {
         transform: scale(.95);
     }
 
-    button.ghost {
+    .ghost {
         background: transparent;
         border-color: #fff;
     }
