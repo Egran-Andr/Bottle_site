@@ -43,89 +43,74 @@
 			</script>
   		</div>
   	</div>
+
+    <div class="row">
+        <div class = "tours" >
+            <b>Горящие туры</b>
+        </div>
+        <div class="card1">
+            <div class = "blockImg1">
+                <img class = "img1" src="static\images\Sochi.jpg">
+            </div>
+           <div class = "textC1">
+                <div class = "t1">
+                    <h2 class = "heading1">Сочи</h2>
+                    <p>Туризм на черноморском побережье России</p>
+                </div>            
+                <div class = "more1">
+                    <p>Подробнее <br></br>Стоимость перелёта от 3 023 руб.</p> 
+                    <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=AER#/schedule" class="button">Забронировать &raquo;</a>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class = "blockImg1">
+                <img class = "img1" src="static\images\Moscow.jpg">
+            </div>
+           <div class = "textC1">
+                <div class = "t1">
+                    <h2 class = "heading1">Москва</h2>
+                    <p>Посетите столицу России и изучите её достопремичательности с комфортом</p>
+                </div>
+                <div class = "more1">
+                    <p>Подробнее <br></br>Стоимость перелёта от 3 721 руб</p> 
+                    <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=AER&destination-city-code=MOW#/schedule" class="button">Забронировать &raquo;</a>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class = "blockImg1">
+                <img class = "img1" src="static\images\SPb.jpg">
+            </div>
+           <div class = "textC1">
+                <div class = "t1">
+                    <h2 class = "heading1">Санкт-Петербург</h2>
+                    <p>Посетите культурную столицу России. Познакомьтесь с творениями великих писателей</p>
+                </div>            
+                <div class = "more1">
+                    <p>Подробнее <br></br> Стоимость перелёта от 2 718 руб</p> 
+                    <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=LED#/schedule" class="button">Забронировать &raquo;</a>
+                </div>
+            </div>
+        </div>
+        <div class="card1">
+            <div class = "blockImg1">
+                <img class = "img1" src="static\images\Krasnoyarsk.jpg">
+            </div>
+           <div class = "textC1">
+                <div class = "t1">
+                    <h2 class = "heading1">Красноярск</h2>
+                    <p>Постетите такие достопримечательности, как: Национальный парк «Столбы», Часовня Параскевы Пятницы, и многие другие</p>
+                </div>            
+            
+                <div class = "more1">
+                    <p>Подробнее <br></br>Стоимость перелёта от 4 676 руб</p> 
+                    <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=KJA#/schedule" class="button">Забронировать &raquo;</a>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    </div>
 </body>
 </html>
-
-
-<div class="row">
-    <div class = "tours" >
-        <b>Горящие туры</b>
-    </div>
-    <div class="card1">
-
-        <div class = "blockImg1">
-            <img class = "img1" src="static\images\Sochi.jpg">
-        </div>
-       <div class = "textC1">
-            <div class = "t1">
-                <h2 class = "heading1">Сочи</h2>
-                <p>Туризм на черноморском побережье России</p>
-            </div>            
-            
-            <div class = "more1">
-                <p>Подробнее <br></br>Стоимость перелёта от 3 023 руб.</p> 
-                <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=AER#/schedule" class="button">Забронировать &raquo;</a>
-            </div>
-
-        </div>
-
-    </div>
-
-        <div class="card1">
-
-        <div class = "blockImg1">
-            <img class = "img1" src="static\images\Moscow.jpg">
-        </div>
-       <div class = "textC1">
-            <div class = "t1">
-                <h2 class = "heading1">Москва</h2>
-                <p>Посетите столицу России и изучите её достопремичательности с комфортом</p>
-            </div>            
-            
-            <div class = "more1">
-                <p>Подробнее <br></br>Стоимость перелёта от 3 721 руб</p> 
-                <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=AER&destination-city-code=MOW#/schedule" class="button">Забронировать &raquo;</a>
-            </div>
-
-        </div>
-    </div>
-            <div class="card1">
-
-        <div class = "blockImg1">
-            <img class = "img1" src="static\images\SPb.jpg">
-        </div>
-       <div class = "textC1">
-            <div class = "t1">
-                <h2 class = "heading1">Санкт-Петербург</h2>
-                <p>Посетите культурную столицу России. Познакомьтесь с творениями великих писателей</p>
-            </div>            
-            
-            <div class = "more1">
-                <p>Подробнее <br></br> Стоимость перелёта от 2 718 руб</p> 
-                <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=LED#/schedule" class="button">Забронировать &raquo;</a>
-            </div>
-
-        </div>
-    
-    </div>
-            <div class="card1">
-        <div class = "blockImg1">
-            <img class = "img1" src="static\images\Krasnoyarsk.jpg">
-        </div>
-       <div class = "textC1">
-            <div class = "t1">
-                <h2 class = "heading1">Красноярск</h2>
-                <p>Постетите такие достопримечательности, как: Национальный парк «Столбы», Часовня Параскевы Пятницы, и многие другие</p>
-            </div>            
-            
-            <div class = "more1">
-                <p>Подробнее <br></br>Стоимость перелёта от 4 676 руб</p> 
-                <a target = "_blank" href="https://booking.nordstar.ru/websky/?origin-city-code=MOW&destination-city-code=KJA#/schedule" class="button">Забронировать &raquo;</a>
-            </div>
-        </div>
-        </div>
-</div>
-
-
-</div>
-  
