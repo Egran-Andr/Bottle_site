@@ -1,13 +1,11 @@
-% rebase('header.tpl', title='Home Page', year=year)
-</div>
-
 <head>
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/static/content/tickets.css" />
-	<link rel="stylesheet" type="text/css" href="">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/content/header.css">
+	<title>Покупка билетов</title>
 </head>
 <body>
+    %include header.tpl
 	<div class="MainBlock">
 		<form class="MainForm" method="GET">
 			<div class="input-field">

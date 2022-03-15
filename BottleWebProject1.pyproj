@@ -73,7 +73,6 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
-    <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\eula.tpl">
       <SubType>Code</SubType>
@@ -87,7 +86,6 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\tickets.tpl" />
-    <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
