@@ -37,8 +37,10 @@
 				const button = document.querySelector('.input-batton');
 				
 				button.addEventListener('click', event => {
-  					if(confirm("Вы подтверждаете покупку?")== false)
-					document.querySelector('input[name="batton"]').value="НЕТ, БЛИН ПРОДАТЬ";
+  					if(confirm("Вы подтверждаете покупку?")== true){
+					    document.querySelector('input[name="batton"]').value="НЕТ, БЛИН, ПРОДАТЬ";
+                        window.location.href = "https://booking.nordstar.ru/websky/#/search";
+                      }
 				});		
 			</script>
   		</div>

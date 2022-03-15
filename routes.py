@@ -14,6 +14,15 @@ def index():
         year=datetime.now().year
     )
 
+@route('/')
+@route('/tickets')
+@view('tickets')
+def billets():
+    """Renders the home page."""
+    return dict(
+        year=datetime.now().year
+    )
+
 @route('/contact')
 @view('contact')
 def contact():
