@@ -36,25 +36,19 @@ def contact():
 @view('header')
 def header():
     """Renders the about page."""
-    return dict(
-        year=datetime.now().year
-    )
+    pass
 
 @route('/login')
 @view('login')
 def login():
     """Renders the about page."""
-    return dict(
-        year=datetime.now().year
-    )
+    pass
 
 @route('/registration')
 @view('registration')
 def registration():
     """Renders the about page."""
-    return dict(
-        year=datetime.now().year
-    )
+    pass
 
 @route('/eula')
 @view('eula')
