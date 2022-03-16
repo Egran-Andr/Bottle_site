@@ -146,5 +146,36 @@ body {
   transform: scaleX(1);
 }
 
+/* * * /HEADER * * */
 /* * * FOOTER * * */
 
+.footer {
+  background: #292929;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.footer__container {
+  text-align: center;
+  line-height: 100px;
+  color: #595959;
+  display: flex;
+  height: 100%;
+}
+
+.container__logo {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 36px;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.container__menu {
+  font-size: 18px;
+  padding: 0 10px;
+  height: 100%;
+}
+
+/* * * /FOOTER * * */

@@ -1,207 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  margin: 0;
 }
 
 body {
-    font-family: 'Montserrat', Arial;
-    background: #f6f5f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: -20px 0 50px;
-    margin-top: 20px;
+	font-family: 'Montserrat', Arial;
+	background: #F6F5F7;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
 }
 
 h1 {
-    font-weight: bold;
-    margin: 0;
-}
-
-p {
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: .5px;
-    margin: 20px 0 30px;
+  margin-bottom: 20px;
+	font-weight: bold;
 }
 
 span {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 a {
-    color: #333;
-    font-size: 14px;
-    margin: 15px 0;
+  text-decoration: underline;
+	color: blue;
 }
 
 .container {
-    background: #08457e;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+	background: #08457e;
+	border-radius: 25px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 560px;
 }
 
 .form-container form {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background: #FFF;
+	padding: 0 50px;
+	height: 100%;
 }
-
-.social-container {
-    margin: 20px 0;
-}
-
-    .social-container a {
-        border: 1px solid #ddd;
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 5px;
-        height: 40px;
-        width: 40px;
-    }
 
 .form-container input {
-    background: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
+	padding: 12px 15px;
+	border: none;
+	margin: 8px 0;
+	width: 100%;
 }
 
 button {
-    border-radius: 20px;
-    border: 1px solid #08457e;
-    background: #08457e;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
+	text-transform: uppercase;
+	border: 1px solid #08457E;
+	border-radius: 20px;
+	background: #08457E;
+	letter-spacing: 1px;
+	padding: 12px 45px;
+	font-weight: bold;
+  margin-top: 20px;
+	font-size: 14px;
+	color: #FFF;
 }
 
-    button:active {
-        transform: scale(.95);
-    }
+button:active {
+	transform: scale(.95);
+}
 
-    button:focus {
-        outline: none;
-    }
+button:focus {
+	outline: none;
+}
 
-    button.ghost {
-        background: transparent;
-        border-color: #fff;
-    }
+button.ghost {
+	background: transparent;
+	border-color: #FFF;
+}
 
 .form-container {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all .6s ease-in-out;
+	position: absolute;
+	height: 100%;
+	top: 0;
 }
 
 .sign-in-container {
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
-
-.sign-up-container {
-    left: 0;
-    width: 50%;
-    z-index: 1;
-    opacity: 0;
+	width: 50%;
+	left: 0;
 }
 
 .overlay-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: transform .6s ease-in-out;
-    z-index: 100;
+	position: absolute;
+	overflow: hidden;
+	z-index: 100;
+	height: 100%;
+	width: 50%;
+	left: 50%;
+	top: 0;
 }
 
 .overlay {
-    background: #08457e;
-    background: linear-gradient(to top, #1DB0D8 10%, #08457e 90%) no-repeat 0 0 / cover;
-    color: #fff;
-    position: relative;
-    height: 100%;
-    width: 50%;
+	position: relative;
+	height: 100%;
+	width: 50%;
 }
 
 .overlay-panel {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 40px;
-    height: 100%;
-    width: 50%;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform .6s ease-in-out;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 40px;
+	display: flex;
+	height: 100%;
+	width: 50%;
+	top: 0;
 }
 
 .overlay-right {
-    width: 100%;
-    height: 100%;
-    right: 0;
-    transform: translateY(0);
+	height: 100%;
+	width: 100%;
+	right: 0;
 }
 
-.overlay-left {
-    transform: translateY(-20%);
+.input-check {
+  line-height: 50px;
+  font-size: 12px;
+  display: flex;
+  height: 50px;
+  width: 100%;
 }
 
-/* Move signin to right */
-.container.right-panel-active .sign-in-container {
-    transform: translateY(100%);
+.input-check label {
+  text-align: center;
+  width: 90%;
 }
 
-/* Move overlay to left */
-.container.right-panel-active .overlay-container {
-    transform: translateX(-100%);
+.input-check input[name="scales"] {
+  background: #FF0;
+  margin: auto;
+  height: 20px;
+  width: 10%;
+  bottom: 0;
+  top: 0;
 }
 
-/* Bring signup over signin */
-.container.right-panel-active .sign-up-container {
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
+.input-field {
+	position: relative;
+	line-height: 44px;
+	width: 250px;
+	height: 44px;
+	margin: 10px 0;
 }
 
-/* Move overlay back to right */
-.container.right-panel-active .overlay {
-    transform: translateX(50%);
+.input-field input {
+	border-bottom: 2px solid #d3d3d3;
+	padding: 5px 0;
+	color: #d3d3d3;
+	width: 100%;
 }
 
-/* Bring back the text to center */
-.container.right-panel-active .overlay-left {
-    transform: translateY(0);
+.input-field label {
+	position: absolute;
+	font-family: "Arial";
+	transition: 0.2s all;
+	color: #d3d3d3;
+	cursor: text;
+	width: 100%;
+	left: 0;
+	top: 0;
 }
 
-/* Same effect for right */
-.container.right-panel-active .overlay-right {
-    transform: translateY(20%);
+.input-field input:invalid {
+	outline: 0;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+	border-color: #08457e;
+	color: #08457e;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 14px;
+  color: #08457e;
+  top: -24px;
 }

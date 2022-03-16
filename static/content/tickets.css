@@ -1,11 +1,37 @@
-.card1 {
-    height: 550px;
-    width: 400px;
-    font-family: Arial;
+* {
+    border: none;
+}
+
+.tours {
     position: relative;
+    font-family: 'Arial';
+    padding-left: 110px;
+    font-size: 38px;
+    color: #08457e;
+    right: 0;
+    left: 0;
+}
+
+.row {
+    position: relative;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    right: 0;
+    left: 0;
+}
+
+.card1 {
+    height: 500px;
+    background: #F8F8F8;
+    width: 400px;
+    font-family: 'Arial';
+    position: relative;
+    margin: 0 14px 50px 14px;
+    border-radius: 20px;
     overflow: hidden;
-    top: 50px;
-    margin: 0 0 0 28px;
     display: inline-block;
     font-family: 'Arial';
 }
@@ -17,59 +43,11 @@
     transition: all 3s;
 }
 
-.textC1:hover > .more1 {
-    transform: skew(0deg, 0deg) translateY(300px);
-    /*background: rgba(0, 0, 255, 1);*/
-}
-
-.heading1 {
-    font-size: 28px;
-    font-family: Verdana;
-    position: relative;
-    overflow: hidden;
-}
-
-.row {
-    width: 90%;
-    height: 100%;
-    overflow: hidden;
-    margin: auto;
-    left: 0;
-    right: 0;
-}
-.tours {
-    position: relative;
-    margin: auto;
-    left: 0;
-    right: 0;
-    color: #08457e;
-    font-size: 38px;
-    font-family: 'Arial';
-    margin: 0 0 0 28px;
-}
 .blockImg1 {
     position: relative;
-    width: 100%;
+    overflow: hidden;
     height: 300px;
-    overflow: hidden;
-}
-
-.more1 {
     width: 100%;
-    height: 210px;
-    position: absolute;
-    z-index: 1000;
-    font-size: 20px;
-    /* background: rgba(8, 69, 126, 1); */
-    background: linear-gradient(to top, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-left: 10px;
-    transition: transform 0.5s, background 0.5s;
-    transform: skew(0deg, 7deg) translateY(450px); /* Equal to skewX(10deg) */
-    overflow: hidden;
 }
 
 .img1 {
@@ -79,43 +57,89 @@
     width: 500px;
     height: 300px;
     position: absolute;
+}
+
+.textC1 {
+    position: relative;
     overflow: hidden;
+    height: 200px;
+}
+
+.more1 {
+    position: absolute;
+    font-size: 20px;
+    height: 210px;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(to top, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px 0 10px;
+    transition: transform 0.5s, background 0.5s;
+    transform: skew(0deg, 7deg) translateY(160px); /* Equal to skewX(10deg) */
+}
+
+.textC1:hover > .more1 {
+    transform: skew(0deg, 0deg) translateY(0px);
+    /*background: rgba(0, 0, 255, 1);*/
+}
+
+.heading1 {
+    font-size: 28px;
+    padding: 10px 0 0 15px;
+    font-family: Verdana;
+    position: relative;
+}
+
+.t1 p {
+    padding: 15px 25px;
+    text-align: justify;
 }
 
 .more1 p {
-    font-size: 24px;
     font-family: 'Arial';
-    color: rgb(255,255,255);
+    font-size: 24px;
+    color: #FFF;
     transition: all 3s;
+}
+
+.button {
+    text-decoration: underline;
 }
 
 .MainBlock {
     position: relative;
     padding-top: 50px;
-    padding-left: 10%;
+    height: 200px;
+    width: 100%;
 }
 
 .MainForm {
+    position: relative;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
 
 .input-field {
     position: relative;
+    line-height: 44px;
     width: 250px;
     height: 44px;
-    line-height: 44px;
     margin: 20px;
 }
 
 .input-field label {
     position: absolute;
     font-family: 'Arial';
-    top: 0;
-    left: 0;
-    width: 100%;
     color: #d3d3d3;
-    transition: 0.2s all;
+    width: 100%;
+    left: 0;
+    top: 0;
     cursor: text;
+    transition: 0.2s all;
 }
 
 .input-field input {
@@ -152,29 +176,27 @@
 
 .input-batton {
     position: relative;
-    width: 250px;
     height: 44px;
+    width: 225px;
     /* margin: 0 20px; */
     margin: auto;
-    left: 0;
     right: 0;
+    left: 0;
 }
 
 .input-batton input {
     border-radius: 20px;
-    border: 1px solid #08457e;
     background: #08457e;
     color: #fff;
+    min-width: 100%;
     font-size: 12px;
     font-weight: bold;
-    padding: 12px 45px;
+    padding: 12px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
     }
 
 .input-batton input:active {
-    /*background: #08457e;
-    color: #FFF;*/
     transform: scale(.95);
 }

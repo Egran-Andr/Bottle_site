@@ -48,5 +48,7 @@
 			</div>
 		</div>
 		<!-- link footer -->
+		%include footer.tpl year=year
+		<!-- link footer -->
 	</body>
 </html>
