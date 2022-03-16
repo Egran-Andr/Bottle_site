@@ -37,6 +37,6 @@ git clone https://github.com/Egran-Andr/Bottle_site cd
 
 | Author           | Work                                       | Username                                            |
 |------------------|--------------------------------------------|-----------------------------------------------------|
-| **Александр Г.** | *Project manegment ,"About us" page and*   | [FYLAG](https://github.com/FYLAG)                   |
-| **Григорий М.**  | *Tickets page and project optimization *   | [Grigory-Mag](https://github.com/Grigory-Mag)       |
-| **Егор А.**      | *Login and Registration Page, Eula page*   | [Egran](https://github.com/Egran-Andr)              |
+| **Alexandr G.** | *Project manegment ,"About us" page and*   | [FYLAG](https://github.com/FYLAG)                   |
+| **Grigory М.**  | *Tickets page and project optimization *   | [Grigory-Mag](https://github.com/Grigory-Mag)       |
+| **Egor А.**      | *Login and Registration Page, Eula page*   | [Egran](https://github.com/Egran-Andr)              |
