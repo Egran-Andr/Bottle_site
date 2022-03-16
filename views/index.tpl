@@ -17,6 +17,7 @@
 		%include header.tpl
 		<!-- link header -->
 		<div class="article">
+			<!-- начало блока приветствия -->
 			<div class="article__welcome">
 				<div class="welcome__container"></div>
 				<div class="lowInfo">
@@ -27,6 +28,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- конец блока приветствия -->
+			<!-- начало блока описания -->
 			<div class="article__employee">
 				<div class="employee__container">
 					<div class="container__text">
@@ -38,14 +41,19 @@
 					</div>
 				</div>
 			</div>
+			<!-- конец блока описания -->
+			<!-- начало блока с картинкой -->
 			<div class="article__security">
 				<div class="security__container"></div>
 				<img src="static/images/background_aircraft.jpg" alt="">
 			</div>
+			<!-- конец блока с картинкой -->
+			<!-- начало блока с предложением -->
 			<div class="article__buyTickets">
-				<p>ПОРА ЛЕТЕЛЬ</p>
+				<p>ПОРА ЛЕТЕТЬ</p>
 				<a href="/tickets">ПЕРЕЙТИ К ПОКУПКЕ БИЛЕТОВ</a>
 			</div>
+			<!-- конец блока с предложением -->
 		</div>
 		<!-- link footer -->
 		%include footer.tpl year=year

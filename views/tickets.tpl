@@ -12,8 +12,12 @@
         <!-- link header -->
         %include header.tpl
         <!-- link header -->
+
+        <!-- Контейнер для размещения блока MainForm-->
 	    <div class="MainBlock">
+            <!-- link header -->
 		    <form class="MainForm" method="GET">
+                <!-- Поля ввода-->
 			    <div class="input-field">
 				    <input type="text" id="Flight" maxlength="10" required />
 				    <label for="Flight">Номер рейса:</label>
@@ -35,29 +39,36 @@
     			    <label for="Numer">Количество человек:</label>
   			    </div>
 		    </form>
+            <!-- Кнопка перехода на страницу покупки-->
 		    <div class="input-batton">
   			    <input type="button" name="batton" value="КУПИТЬ" />
+                 <!-- Открываем теги для работы с javascript -->
   			    <script type="text/javascript" >
 				    const button = document.querySelector('.input-batton');
 
 				    button.addEventListener('click', event => {
   					    if(confirm("Вы подтверждаете покупку?")== true){
-					        document.querySelector('input[name="batton"]').value="НЕТ, БЛИН, ПРОДАТЬ";
+					        document.querySelector('input[name="batton"]').value="ВЗЛЕТАЕМ";
                             window.location.href = "https://booking.nordstar.ru/websky/#/search";
                             }
-				    });		
+				    });
 			    </script>
   		    </div>
   	    </div>
 
+        <!-- Надпись-->
         <div class = "tours">
                 <b>Горящие туры</b>
         </div>
+        <!-- Блок с карточками туров -->
         <div class="row">
+            <!-- Карточка тура -->
             <div class="card1">
+                <!-- Блок изображения -->
                 <div class="blockImg1">
                     <img class="img1" src="static\images\Sochi.jpg">
                 </div>
+                <!-- Блок текста -->
                 <div class="textC1">
                     <div class="t1">
                         <h2 class="heading1">Сочи</h2>

@@ -1,3 +1,4 @@
+<!-- начало верхнего блока -->
 <div class="header">
 	<div class="header__container">
 		<div class="container__title">
@@ -12,3 +13,4 @@
 		</div>
 	</div>
 </div>
+<!-- начало верхнего блока -->

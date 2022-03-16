@@ -1,3 +1,4 @@
+<!-- начало подвала -->
 <div class="footer">
 	<div class="footer__container">
 		<div class="container__logo">
@@ -8,3 +9,4 @@
 		</div>
 	</div>
 </div>
+<!-- конец подвала -->
