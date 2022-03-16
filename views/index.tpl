@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="welcome__img">
-			<img src="https://images.pling.com/img/00/00/59/57/30/1473830/58e855933a4c9035335da1da6fbd319da9a776a6b9d32d7ad722a4dcc90c0c625e22.jpg" alt="" />
+			<img src="static/images/background_plaj.jpg" alt="" />
 		</div>
 		<!-- link header -->
 		%include header.tpl
@@ -34,13 +34,13 @@
 						Всё это благодаря качественной работы наших сотрудников, которые стараются развивать и делать нашу компанию лучше.
 					</div>
 					<div class="container__image">
-						<img src="https://www.biletik.aero/upload/medialibrary/ccd/ccdf731b1d23f28e4868aab84aaea6e9.jpg" alt="" />
+						<img src="static/images/background_employee.jpg" alt="" />
 					</div>
 				</div>
 			</div>
 			<div class="article__security">
 				<div class="security__container"></div>
-				<img src="https://img3.goodfon.ru/wallpaper/nbig/1/87/samolet-v-nebe-passazhirskiy.jpg" alt="">
+				<img src="static/images/background_aircraft.jpg" alt="">
 			</div>
 			<div class="article__buyTickets">
 				<p>ПОРА ЛЕТЕЛЬ</p>
