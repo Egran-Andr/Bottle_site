@@ -52,6 +52,13 @@ def registration():
     """Renders the about page."""
     pass
 
+@route('/registration/add')
+@view('registration')
+def registrationAdd():
+    """Renders the about page."""
+    pass
+
+
 @route('/eula')
 @view('eula')
 def eula():
@@ -71,7 +78,7 @@ def articlesList():
     if where_json('articles.json'):
         pass
     else:
-        data=[];
+        data=[]
         with open('articles.json', 'w') as outfile:  
             json.dump(data, outfile)
     
@@ -93,6 +100,19 @@ def articlesadd():
 
 @route('/listUsers')
 @view('listUsers')
-def header():
+def listUsers():
     """Renders the about page."""
-    pass
+    def whereJson(fileName):
+        return os.path.exists(fileName)
+
+    if not(whereJson('users.json')):
+
+        data=[]
+
+        with open('users.json', 'w') as outFile:
+            json.dump(data, outFile)
+    
+    with open('users.json', "r") as file:
+        jsonData = json.load(file)
+
+    return jsonData

@@ -44,6 +44,9 @@
     <Compile Include="test_articles_t.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="userRegistration.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
