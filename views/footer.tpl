@@ -7,6 +7,9 @@
 		<div class="container__menu">
 			&copy;{{ year }} Все права защищены.
 		</div>
+		<div class="container__count">
+			<p>Пользователей онлайн: 5,000</p>
+		</div>
 	</div>
 </div>
 <!-- конец подвала -->

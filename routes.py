@@ -90,3 +90,9 @@ def articlesadd():
     return dict(
         year=datetime.now().year
     )
+
+@route('/listUsers')
+@view('listUsers')
+def header():
+    """Renders the about page."""
+    pass
