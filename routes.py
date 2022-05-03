@@ -75,7 +75,7 @@ def articlesList():
         with open('articles.json', 'w') as outfile:  
             json.dump(data, outfile)
     
-    with open('articles.json', "r",encoding="utf-8") as file:
+    with open('articles.json', "r") as file:
         json_data=json.load(file)
     return dict(
         year=datetime.now().year,

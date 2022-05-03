@@ -25,7 +25,7 @@
             <div class="textC1">
                 <div class="t1">
                     <p>{{item[1]}}</p>
-                    <h2 class="heading1">{{item[0]}}</h2>
+                    <h5 class="heading2">{{item[0]}}</h5>
                     <a class="ghost" href="{{item[4]}}" id="signUp">{{item[2]}}</a>
                 </div>
             </div>

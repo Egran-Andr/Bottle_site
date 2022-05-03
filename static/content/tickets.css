@@ -231,3 +231,10 @@
     background: transparent;
     border-color: #fff;
 }
+
+.heading2 {
+    font-size: 15px;
+    padding: 10px 0 0 15px;
+    font-family: Verdana;
+    position: relative;
+}
