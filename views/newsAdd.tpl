@@ -24,7 +24,7 @@
             <!-- link header -->
                 <!-- Поля ввода-->
                 <div class="input-field">
-                    <input name="AUTHOR" type="text" id="Author" required />
+                    <input name="AUTHOR" type="text" id="Author" maxlength=18 required />
                     <label for="Author">Автор:</label>
                 </div>
                 <div class="input-field">

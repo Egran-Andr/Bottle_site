@@ -4,6 +4,11 @@ import pdb
 import json
 
 @post('/button')
+def checkLength(author, header):
+    if len(author) <= 18 and len(header) <=137:
+        return True
+    else:
+        return False
 def my_form():
     out:list=[]
     header=request.params.HEADER

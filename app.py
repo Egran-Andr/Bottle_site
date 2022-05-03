@@ -2,7 +2,7 @@
 This script runs the application using a development server.
 """
 
-import bottle, articlesmod, userRegistration
+import bottle,articlesmod, userRegistration
 import os
 import sys
 import readNews

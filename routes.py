@@ -7,6 +7,22 @@ from datetime import datetime
 import json
 import os
 
+def SearchUsersJson(nameJson):
+
+    def whereJson(fileName):
+        return os.path.exists(fileName)
+
+    if not(whereJson(nameJson)):
+
+        data=[]
+
+        with open(nameJson, 'w') as outFile:
+            json.dump(data, outFile)
+    
+    with open(nameJson, "r") as file:
+        jsonData = json.load(file)
+
+    return jsonData
 @route('/')
 @route('/index')
 @view('index')
@@ -35,9 +51,9 @@ def index():
 def billets():
     """Renders the home page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now().year,
+        countUsersJson = len(SearchUsersJson('users.json'))
     )
-
 @route('/contact')
 @view('contact')
 def contact():
@@ -106,6 +122,14 @@ def articlesList():
 @route('/articlesadd')
 @view('articles')
 def articlesadd():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )
+
+@route('/newsAdd')
+@view('newsAdd')
+def articles():
     """Renders the about page."""
     return dict(
         year=datetime.now().year

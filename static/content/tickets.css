@@ -64,14 +64,18 @@
     overflow: hidden;
     height: 200px;
 }
-
-    .textC1 a {
-        color: #08457e;
-        font-family: 'Arial';
-        font-size: 15px;
-        position: relative;
-        margin: 0 14px 50px 14px;
-    }
+.textC2 {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+.textC2 a {
+    color: #08457e;
+    font-family: 'Arial';
+    font-size: 15px;
+    position: relative;
+    margin: 0 14px 50px 14px;
+}
 .mainText {
     height: 70px;
     width: auto;
@@ -226,6 +230,7 @@
     border-right: 2px solid #d3d3d3;
     border-top: 2px solid #d3d3d3;
     margin: 20px;
+}
 
 .MainBlockAdd {
     position: relative;
@@ -266,4 +271,7 @@
     padding: 10px 0 0 15px;
     font-family: Verdana;
     position: relative;
+}
+.btnNewsAdd {
+    margin-top: 25px;
 }

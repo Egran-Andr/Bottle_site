@@ -14,6 +14,8 @@
 	%include header.tpl
     %import json
 	<!-- link header -->
+    <div class = "test">
+    </div>
     <div class = "input-batton">
         <input type="submit" class="btnNewsAdd" onclick= "window.location.href ='/newsAdd'" value="Добавить" />
     </div>
@@ -24,7 +26,7 @@
                 <div class="blockImg1">
                     <img class="img1" src="{{item[4]}}">
                 </div>
-               <div class="textC1">
+               <div class="textC2">
                     <div class="t1">
                         <p>{{item[2]}}</p>
                         <h2 class="heading1">{{item[1]}}</h2>

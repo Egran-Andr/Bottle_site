@@ -41,6 +41,9 @@
     <Compile Include="test_articles_t.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_length_t.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="userRegistration.py">
       <SubType>Code</SubType>
     </Compile>
@@ -99,6 +102,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\news.tpl" />
+    <Content Include="views\newsAdd.tpl" />
     <Content Include="views\registration.tpl">
       <SubType>Code</SubType>
     </Content>
