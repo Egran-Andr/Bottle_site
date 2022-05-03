@@ -8,7 +8,7 @@
 			&copy;{{ year }} Все права защищены.
 		</div>
 		<div class="container__count">
-			<p>Пользователей онлайн: {{ countUsersJson }}</p>
+			<a href="/listUsers">Пользователей онлайн: {{ countUsersJson }}</a>
 		</div>
 	</div>
 </div>
