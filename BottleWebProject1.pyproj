@@ -20,6 +20,9 @@
     <RootNamespace>BottleWebProject1</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,10 +34,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="readNews.py">
+    <Compile Include="routes.py" />
+    <Compile Include="test_articles_f.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes.py" />
+    <Compile Include="test_articles_t.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="userRegistration.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
@@ -46,6 +55,7 @@
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="static\content\index_mine.css" />
+    <Content Include="static\content\listUsers.css" />
     <Content Include="static\content\login.css">
       <SubType>Code</SubType>
     </Content>
@@ -76,12 +86,15 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
+    <Content Include="views\ArticlesList.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\eula.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\footer.tpl" />
     <Content Include="views\header.tpl" />
     <Content Include="views\index.tpl" />
+    <Content Include="views\listUsers.tpl" />
     <Content Include="views\login.tpl">
       <SubType>Code</SubType>
     </Content>
@@ -90,7 +103,6 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\tickets.tpl" />
-    <Content Include="views\newsAdd.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">

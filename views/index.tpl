@@ -56,7 +56,7 @@
 			<!-- конец блока с предложением -->
 		</div>
 		<!-- link footer -->
-		%include footer.tpl year=year
+		%include footer.tpl year=year, countUsersJson=countUsersJson
 		<!-- link footer -->
 	</body>
 </html>

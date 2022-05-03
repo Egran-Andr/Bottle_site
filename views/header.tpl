@@ -7,7 +7,7 @@
 		<div class="container__menu">
 			<a href="/tickets">билеты</a>
 			<a href="/index">о компании</a>
-			<a href="/newsAdd">полезные статьи</a>
+			<a href="/articlesList">полезные статьи</a>
 			<a href="/news">новинки</a>
 		</div>
 		<div class="container__login">
