@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject1</Name>
     <RootNamespace>BottleWebProject1</RootNamespace>
-    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="readNews.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
@@ -82,10 +85,12 @@
     <Content Include="views\login.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\news.tpl" />
     <Content Include="views\registration.tpl">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\tickets.tpl" />
+    <Content Include="views\newsAdd.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">

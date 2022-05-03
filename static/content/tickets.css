@@ -65,6 +65,21 @@
     height: 200px;
 }
 
+    .textC1 a {
+        color: #08457e;
+        font-family: 'Arial';
+        font-size: 15px;
+        position: relative;
+        margin: 0 14px 50px 14px;
+    }
+.mainText {
+    height: 70px;
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
 .more1 {
     position: absolute;
     font-size: 20px;
@@ -199,4 +214,32 @@
 
 .input-batton input:active {
     transform: scale(.95);
+}
+
+.text-input {
+    border: 2px solid #08457e;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border-bottom: 2px solid #d3d3d3;
+    border-left: 2px solid #d3d3d3;
+    border-right: 2px solid #d3d3d3;
+    border-top: 2px solid #d3d3d3;
+    margin: 20px;
+}
+
+.MainBlockAdd {
+    position: relative;
+    padding-top: 50px;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.btnNewsAdd {
+    margin-top: 25px;
 }

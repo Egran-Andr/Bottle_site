@@ -7,6 +7,8 @@
 		<div class="container__menu">
 			<a href="/tickets">билеты</a>
 			<a href="/index">о компании</a>
+			<a href="/newsAdd">полезные статьи</a>
+			<a href="/news">новинки</a>
 		</div>
 		<div class="container__login">
 			<a href="/login"><i class="far fa-user"></i></a>
