@@ -3,6 +3,14 @@ import re
 import pdb
 import json
 
+def сorrectdate(date:str):
+    regex = re.compile(r"^(?<!\d)(?:0?[1-9]|[12][0-9]|3[01])-(?:0?[1-9]|1[0-2])-(?:19[0-9][0-9]|20[012][0-9])(?!\d)")
+    datecor=date
+    if re.fullmatch(regex, datecor):
+        return True
+    else:
+        return False
+
 @post('/button')
 def my_form():
     out:list=[]
