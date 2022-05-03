@@ -31,19 +31,26 @@ def index():
     def whereJson(fileName):
         return os.path.exists(fileName)
 
-    if not(whereJson('users.json')):
+    if not(whereJson(nameJson)):
 
         data=[]
 
-        with open('users.json', 'w') as outFile:
+        with open(nameJson, 'w') as outFile:
             json.dump(data, outFile)
     
-    with open('users.json', "r") as file:
+    with open(nameJson, "r") as file:
         jsonData = json.load(file)
 
+    return jsonData
+
+@route('/')
+@route('/index')
+@view('index')
+def index():
+    """Renders the home page."""
     return dict(
         year=datetime.now().year,
-        countUsersJson = len(jsonData)
+        countUsersJson = len(SearchUsersJson('users.json'))
     )
 
 @route('/tickets')
@@ -156,19 +163,6 @@ def articles():
 @view('listUsers')
 def listUsers():
     """Renders the about page."""
-    def whereJson(fileName):
-        return os.path.exists(fileName)
-
-    if not(whereJson('users.json')):
-
-        data=[]
-
-        with open('users.json', 'w') as outFile:
-            json.dump(data, outFile)
-    
-    with open('users.json', "r") as file:
-        jsonData = json.load(file)
-
     return dict(
-        listUsersJson = jsonData
+        listUsersJson = SearchUsersJson('users.json')
     )

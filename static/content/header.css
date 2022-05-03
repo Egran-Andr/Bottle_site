@@ -186,12 +186,14 @@ body {
   right: 75px;
 }
 
-.footer__container .container__count p {
-  position: relative;
+.footer__container .container__count a {
+  text-decoration: none;
   font-family: 'Arial';
+  position: relative;
+  color: #595959;
 }
 
-.footer__container .container__count p::before {
+.footer__container .container__count a::before {
   content: '';
   position: absolute;
   width: 5px; 
