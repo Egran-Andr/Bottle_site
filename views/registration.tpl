@@ -30,7 +30,7 @@
                     </div>
                     <div class="input-check"> <!-- подтверждение с ссылкой на условия пользования -->
                         <label for="scales">Вы согласны с <a target="+blank" href="/eula">условием пользования</a></label>
-                        <input name="Agreement" type="checkbox" id="scales" name="scales" checked="checked"/>
+                        <input name="Agreement" type="checkbox" id="scales" checked="checked" required />
                     </div><!-- Кнопка регистрации-->
                     <button>Регистрация</button>
                 </form>

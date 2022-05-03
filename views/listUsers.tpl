@@ -19,13 +19,14 @@
 				<h1>Присоединившиеся к нам пользователи:</h1>
 			</div>
 			<div class="article__content">
-				% for i in range(70):
+				%import json
+				% for user in listUsersJson:
 				<div class="content__user">
 					<div class="user__login">
-						Логин: BallsMaster
+						Логин: {{ user[0] }}
 					</div>
 					<div class="user__email">
-						Почта: 2022TheBest
+						Почта: {{ user[1] }}
 					</div>
 				</div>
 				%end

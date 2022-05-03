@@ -12,8 +12,22 @@ import os
 @view('index')
 def index():
     """Renders the home page."""
+    def whereJson(fileName):
+        return os.path.exists(fileName)
+
+    if not(whereJson('users.json')):
+
+        data=[]
+
+        with open('users.json', 'w') as outFile:
+            json.dump(data, outFile)
+    
+    with open('users.json', "r") as file:
+        jsonData = json.load(file)
+
     return dict(
-        year=datetime.now().year
+        year=datetime.now().year,
+        countUsersJson = len(jsonData)
     )
 
 @route('/tickets')
@@ -56,7 +70,7 @@ def registration():
 @view('registration')
 def registrationAdd():
     """Renders the about page."""
-    pass
+    template('index')
 
 
 @route('/eula')
@@ -115,4 +129,6 @@ def listUsers():
     with open('users.json', "r") as file:
         jsonData = json.load(file)
 
-    return jsonData
+    return dict(
+        listUsersJson = jsonData
+    )
