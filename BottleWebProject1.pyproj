@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject1</Name>
     <RootNamespace>BottleWebProject1</RootNamespace>
-    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test_*.py</UnitTestPattern>
@@ -34,9 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="articlesmod.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="routes.py" />
     <Compile Include="test_articles_f.py">
       <SubType>Code</SubType>
@@ -48,6 +45,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_registration_T.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_length_t.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="userRegistration.py">
@@ -108,11 +108,12 @@
     <Content Include="views\login.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\news.tpl" />
+    <Content Include="views\newsAdd.tpl" />
     <Content Include="views\registration.tpl">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\tickets.tpl" />
-    <Content Include="views\articles.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
