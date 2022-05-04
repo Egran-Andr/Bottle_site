@@ -36,5 +36,3 @@ def my_form():
     with open('articles.json', "w") as file:
         json.dump(out,file,ensure_ascii=False,indent=4)
     return "Статья была добавлена на сайт!"
-
-
