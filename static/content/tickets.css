@@ -64,7 +64,26 @@
     overflow: hidden;
     height: 200px;
 }
-
+.textC2 {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+.textC2 a {
+    color: #08457e;
+    font-family: 'Arial';
+    font-size: 15px;
+    position: relative;
+    margin: 0 14px 50px 14px;
+}
+.mainText {
+    height: 70px;
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
 .more1 {
     position: absolute;
     font-size: 20px;
@@ -197,9 +216,22 @@
     transition: transform 80ms ease-in;
     }
 
-.input-batton input:active {
-    transform: scale(.95);
+    .input-batton input:active {
+        transform: scale(.95);
+    }
+
+.text-input {
+    border: 2px solid #08457e;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border-bottom: 2px solid #d3d3d3;
+    border-left: 2px solid #d3d3d3;
+    border-right: 2px solid #d3d3d3;
+    border-top: 2px solid #d3d3d3;
+    margin: 20px;
 }
+
 .MainBlockAdd {
     position: relative;
     padding-top: 50px;
@@ -212,6 +244,7 @@
     align-items: center;
     display: grid;
 }
+
 .ghost1 {
     border-radius: 40px;
     border: 1px solid #08457e;
@@ -224,9 +257,10 @@
     transition: transform 80ms ease-in;
 }
 
-.ghost1:active {
-	transform: scale(.95);
-}
+    .ghost1:active {
+        transform: scale(.95);
+    }
+
 .ghost1 {
     background: transparent;
     border-color: #fff;
@@ -237,4 +271,7 @@
     padding: 10px 0 0 15px;
     font-family: Verdana;
     position: relative;
+}
+.btnNewsAdd {
+    margin-top: 25px;
 }

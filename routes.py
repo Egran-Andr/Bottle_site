@@ -42,7 +42,6 @@ def billets():
         year=datetime.now().year,
         countUsersJson = len(SearchUsersJson('users.json'))
     )
-
 @route('/contact')
 @view('contact')
 def contact():
@@ -85,7 +84,6 @@ def eula():
     return dict(
         year=datetime.now().year
     )
-
 @route('/articlesList')
 @view('ArticlesList')
 def articlesList():
@@ -115,6 +113,30 @@ def articlesadd():
     """Renders the about page."""
     return dict(
         year=datetime.now().year
+    )
+
+@route('/newsAdd')
+@view('newsAdd')
+def articles():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )
+
+@route('/news')
+@view('news')
+def articles():
+    """Renders the about page."""
+    f = open('news.json','a+')
+    f.close()
+    with open('news.json', "r") as file:
+        try:
+            json_data=json.load(file)
+        except:
+            json_data=[]
+    return dict(
+        year=datetime.now().year,
+        news_list=json_data
     )
 
 @route('/listUsers')

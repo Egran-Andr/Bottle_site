@@ -2,7 +2,7 @@
 This script runs the application using a development server.
 """
 
-import bottle, os, sys, articlesmod, userRegistration
+import os, sys, bottle, articlesmod, userRegistration, readNews
 
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
