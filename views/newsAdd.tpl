@@ -25,8 +25,9 @@
             <!-- link header -->
                 <!-- Поля ввода-->
                 <div class="input-field">
-                    <input name="AUTHOR" type="text" id="Author" maxlength=18 minlength=3 placeholder="                           от 3 до 18 символов" required />
+                    <input name="AUTHOR" type="text" id="Author" maxlength=18 minlength=3 onkeyup="countChars('#Author','.AuthorField')" placeholder="                           от 3 до 18 символов" required />
                     <label for="Author">Заголовок:</label>
+                    <span class="AuthorField">Символов использовано: 0/18</span>
                 </div>
                 <div class="input-field">
                     <input name = "IMAGE" type="text" id="Image" required />
@@ -41,15 +42,27 @@
                     <input name = "LINK" type="text" id="Link" required />
                     <label for="Link">Ссылка:</label>
                 </div>
-                <textarea class = "text-input" name = "HEADER" maxlength=137 placeholder="137 символов" required></textarea>
+                <span class="textField">Символов использовано: 0/137</span>
+                <textarea class = "text-input" name = "HEADER" id="textFieldInput" maxlength=137 onkeyup="countChars('#textFieldInput','.textField')" placeholder="137 символов" required></textarea>
 
             <div class="input-batton">
-                <input type="submit" class="btn btn-default" value="Добавить" />
+                <input type="submit" class="btn btn-default"  value="Добавить"  />
                 <!-- Открываем теги для работы с javascript -->
             </div>
 
         </div>
     </form>
+            <script type = "text/javascript">
+            function countChars(linkBlockInput, linkBlockOutput) {
 
+            var inputField = document.querySelector(linkBlockInput);
+            var textCount = document.querySelector(linkBlockOutput);
+
+            var textlength = inputField.value.length;
+
+            if (textlength != null)
+                textCount.innerText = `Символов использовано: ${textlength} / ${inputField.maxLength}`;
+            }
+        </script>
 </body>
 </html>

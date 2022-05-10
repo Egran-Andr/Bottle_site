@@ -10,13 +10,16 @@ def checkLength(author, header):
         return True
     else:
         return False
+
 def checkURL(url):
     regex = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     if re.fullmatch(regex, url):
         return True
     else:
         return False
+
 @post('/buttonNews')
+
 def my_form():
     out:list=[]
     header=request.params.HEADER
@@ -25,17 +28,15 @@ def my_form():
     image = request.params.IMAGE
     link = request.params.LINK
     news = [header, author, date, link, image]
-    if (checkURL(link) == False or checkURL(image) == False):
-        return "Неверная ссылка или неверное изображение"
-    else:
+    if (checkURL(link) != False or checkURL(image) != False):
         try:
             with open ('news.json', "r") as file:
                 out=json.load(file)
         except:
-            print("clown")
+            print("Error")
         out.append(news)
         
         with open('news.json', "w") as file:
             json.dump(out,file,indent=4, ensure_ascii=False)
 
-        return redirect("/news")
+    return redirect("/news")
