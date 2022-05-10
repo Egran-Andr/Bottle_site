@@ -68,14 +68,9 @@ def login():
 @view('registration')
 def registration():
     """Renders the about page."""
-    pass
-
-@route('/registration/add')
-@view('registration')
-def registrationAdd():
-    """Renders the about page."""
-    template('index')
-
+    return dict(
+        text='text?'
+    )
 
 @route('/eula')
 @view('eula')

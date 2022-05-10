@@ -33,5 +33,35 @@
         "S.T.A.L.K.E.R.",
         "pripat@mail.com",
         "cherno"
+    ],
+    [
+        "SuperUser",
+        "MyPochta@mail.ru",
+        "777"
+    ],
+    [
+        "Maestro",
+        "PopularMail@rambler.ru",
+        "hard777"
+    ],
+    [
+        "NewUser",
+        "localHost@yahoo.com",
+        "superpass"
+    ],
+    [
+        "Ogurechik",
+        "ovosh@rambler.ru",
+        "12345"
+    ],
+    [
+        "Ogorodnik",
+        "TheBestPeople@mail.ru",
+        "123456789"
+    ],
+    [
+        "TestUser",
+        "mail@mail.com",
+        "123"
     ]
 ]

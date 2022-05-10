@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject1</Name>
     <RootNamespace>BottleWebProject1</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test_*.py</UnitTestPattern>
@@ -34,6 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="articlesmod.py" />
+    <Compile Include="readNews.py" />
     <Compile Include="routes.py" />
     <Compile Include="test_articles_f.py">
       <SubType>Code</SubType>
@@ -55,14 +57,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="tests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
+    <Folder Include="static\images\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="articles.json" />
+    <Content Include="news.json" />
+    <Content Include="README.md" />
     <Content Include="requirements.txt" />
     <Content Include="static\content\index_mine.css" />
     <Content Include="static\content\listUsers.css" />
@@ -81,6 +86,14 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\background_aircraft.jpg" />
+    <Content Include="static\images\background_employee.jpg" />
+    <Content Include="static\images\background_plaj.jpg" />
+    <Content Include="static\images\Krasnoyarsk.jpg" />
+    <Content Include="static\images\Moscow.jpg" />
+    <Content Include="static\images\planereg.jpg" />
+    <Content Include="static\images\Sochi.jpg" />
+    <Content Include="static\images\SPb.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -96,6 +109,8 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
+    <Content Include="users.json" />
+    <Content Include="views\articles.tpl" />
     <Content Include="views\ArticlesList.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\eula.tpl">

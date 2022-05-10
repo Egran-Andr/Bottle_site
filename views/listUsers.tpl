@@ -14,12 +14,12 @@
         <!-- link header -->
 		%include header.tpl
 		<!-- link header -->
-		<div class="article">
+		<article>
 			<div class="article__headerName">
 				<h1>Присоединившиеся к нам пользователи:</h1>
 			</div>
 			<div class="article__content">
-				%import json
+				% listUsersJson.reverse()
 				% for user in listUsersJson:
 				<div class="content__user">
 					<div class="user__login">
@@ -31,6 +31,6 @@
 				</div>
 				%end
 			</div>
-		</div>
+		</article>
     </body>
 </html>

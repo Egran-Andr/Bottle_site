@@ -8,42 +8,49 @@
         <title>Авторизация</title>
     </head>
     <body>
-       <div class="container">
-            <div class="form-container">
-                <form action="#">
-                    <h1>Авторизация</h1>
-                    <div class="social-container">
-                        <!-- Иконки входа через соцсети-->
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                        <!-- Надпись-->
-                    <span>или войти под созданным аккаунтом</span>
-                        <div class="input-field">
-                               <!-- Поле ввода почты и текст на этом поле-->
-                            <input type="email" id="inputEmail" required />
-                            <label for="inputEmail">Почта</label>
-                        </div>
-                        <div class="input-field">
-                            <!-- Поле ввода пароля и текст на этом поле-->
-                            <input type="password" id="inputPass" required />
-                            <label for="inputPass">Пароль</label>
-                        </div>
-                    <a href="#">Забыли пароль?</a>
-                        <!-- Кнопка входа-->
-                    <button>Войти</button>
-                </form>
+        <header>
+            <div class="header__container"> <!-- Кнопка возвращения на главный экран -->
+                <a href="/index">StarLines</a>
             </div>
-            <div class="overlay-container"> <!-- "Правый контейнер " ведущий на регестрацию-->
-                <div class="overlay">
-                    <div class="overlay-panel overlay-right"> <!-- "Текст и форма на контейнере-->
-                        <h1>Привет, Друг!</h1>
-                        <p>Зарегестрируйся и летайте с нами уже сегодня</p>
-                        <a class="ghost" href="/registration" id="signUp">Регистрация</a>
+        </header>
+        <article>
+            <div class="container">
+                <div class="form-container">
+                    <form action="#">
+                        <h1>Авторизация</h1>
+                        <div class="social-container">
+                            <!-- Иконки входа через соцсети-->
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                            <!-- Надпись-->
+                        <span>или войти под созданным аккаунтом</span>
+                            <div class="input-field">
+                                   <!-- Поле ввода почты и текст на этом поле-->
+                                <input type="email" id="inputEmail" required />
+                                <label for="inputEmail">Почта</label>
+                            </div>
+                            <div class="input-field">
+                                <!-- Поле ввода пароля и текст на этом поле-->
+                                <input type="password" id="inputPass" required />
+                                <label for="inputPass">Пароль</label>
+                            </div>
+                        <a href="#">Забыли пароль?</a>
+                            <!-- Кнопка входа-->
+                        <button>Войти</button>
+                    </form>
+                </div>
+                <div class="overlay-container"> <!-- "Правый контейнер " ведущий на регестрацию-->
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-right"> <!-- "Текст и форма на контейнере-->
+                            <h1>Привет, Друг!</h1>
+                            <p>Зарегестрируйся и летайте с нами уже сегодня</p>
+                            <a class="ghost" href="/registration" id="signUp">Регистрация</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </article>
     </body>
 </html>

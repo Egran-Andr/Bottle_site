@@ -16,7 +16,7 @@
 		<!-- link header -->
 		%include header.tpl
 		<!-- link header -->
-		<div class="article">
+		<article>
 			<!-- начало блока приветствия -->
 			<div class="article__welcome">
 				<div class="welcome__container"></div>
@@ -54,7 +54,7 @@
 				<a href="/tickets">ПЕРЕЙТИ К ПОКУПКЕ БИЛЕТОВ</a>
 			</div>
 			<!-- конец блока с предложением -->
-		</div>
+		</article>
 		<!-- link footer -->
 		%include footer.tpl year=year, countUsersJson=countUsersJson
 		<!-- link footer -->

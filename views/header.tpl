@@ -1,5 +1,5 @@
 <!-- начало верхнего блока -->
-<div class="header">
+<header>
 	<div class="header__container">
 		<div class="container__title">
 			<div class="title__name"><span>Star</span>Lines</div>
@@ -14,5 +14,5 @@
 			<a href="/login"><i class="far fa-user"></i></a>
 		</div>
 	</div>
-</div>
+</header>
 <!-- начало верхнего блока -->

@@ -1,89 +1,89 @@
 *, *:before, *:after {
-    text-decoration: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -webkit-appearance: none;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    padding: 0;
-    margin: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-appearance: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    background: #FFF;
-    display: block;
+	background: #FFF;
+	display: block;
 }
 
 button, input, a {
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	border: none;
 }
 
-.article {
-    height: auto;
-    width: 100%;
+article {
+	height: auto;
+	width: 100%;
 }
 
 .article__headerName {
-    padding: 60px;
-    height: 100px;
-    width: 100%;
+	padding: 60px;
+	height: 100px;
+	width: 100%;
 }
 
 .article__headerName h1 {
-    font-family: 'Arial';
-    font-size: 30px;
-    color: #000;
+	font-family: 'Arial';
+	font-size: 30px;
+	color: #08457e;
 }
 
 .article__content {
-    flex-wrap: wrap;
-    display: flex;
-    padding: 20px 100px;
-    height: auto;
-    width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	padding: 20px 100px;
+	height: auto;
+	width: 100%;
 }
 
 .article__content .content__user {
-    background: linear-gradient(25deg, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
-    box-shadow: 4px 4px 8px 2px #777;
-    font-family: 'Arial';
-    border-radius: 10px;
-    margin: 20px auto;
-    height: 120px;
-    width: 100%;
-    color: #FFF;
+	background: linear-gradient(25deg, #1DB0D8 10%, #08457e 90%) no-repeat 0 0;
+	box-shadow: 4px 4px 8px 2px #777;
+	font-family: 'Arial';
+	border-radius: 10px;
+	margin: 20px auto;
+	height: 120px;
+	width: 100%;
+	color: #FFF;
 }
 
 .article__content .content__user:nth-child(4n+1) {
-    width: 35%;
+	width: 35%;
 }
 
 .article__content .content__user:nth-child(4n+2) {
-    width: 55%;
+	width: 55%;
 }
 
 .article__content .content__user:nth-child(4n+3) {
-    width: 55%;
+	width: 55%;
 }
 
 .article__content .content__user:nth-child(4n+4) {
-    width: 35%;
+	width: 35%;
 }
 
 .content__user .user__login {
-    margin: 25px 0 0 25px;
-    font-size: 24px;
+	margin: 25px 0 0 25px;
+	font-size: 24px;
 }
 
 .content__user .user__email {
-    margin: 20px 0 0 50px;
-    font-size: 18px;
+	margin: 20px 0 0 50px;
+	font-size: 18px;
 }
