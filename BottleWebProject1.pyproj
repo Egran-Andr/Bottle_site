@@ -21,7 +21,7 @@
     <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
     <TestFramework>unittest</TestFramework>
-    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestPattern>test_*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -43,6 +43,12 @@
     <Compile Include="test_articles_t.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_registration_F.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_registration_T.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_length_t.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +60,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="tests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />

@@ -2,11 +2,9 @@ from bottle import post, request
 
 import re, pdb, app, json
 
-def check_mail(email):
+def checkInputField(login, regul):
 
-    regul = r'\w+\@\w+\.[a-z]+'
-    
-    if re.fullmatch(regul, email):
+    if re.fullmatch(regul, login):
         return True
 
     else:
@@ -28,24 +26,30 @@ def regUser():
 
     else:
 
-        if not(check_mail(email)):
+        if not(checkInputField(login, r'[a-zA-Z0-9.-_]+')):
 
-            return 'You entered a strange email!'
+            return 'You entered a strange login!'
 
         else:
 
-            users:list = [login, email, password]
-            
-            try:
-                with open('users.json', "r") as file:
-                    outData = json.load(file)
+            if not(checkInputField(email, r'\w+\@\w+\.[a-z]+')):
 
-            except:
-                    print('File not found!')
+                return 'You entered a strange email!'
 
-            outData.append(users)
+            else:
 
-            with open('users.json', "w") as file:
-                json.dump(outData, file, ensure_ascii = False, indent = 4)
+                users:list = [login, email, password]
+                
+                try:
+                    with open('users.json', "r") as file:
+                        outData = json.load(file)
+
+                except:
+                        print('File not found!')
+
+                outData.append(users)
+
+                with open('users.json', "w") as file:
+                    json.dump(outData, file, ensure_ascii = False, indent = 4)
 
     return 'User added successfully!'

@@ -23,25 +23,6 @@ def SearchUsersJson(nameJson):
         jsonData = json.load(file)
 
     return jsonData
-@route('/')
-@route('/index')
-@view('index')
-def index():
-    """Renders the home page."""
-    def whereJson(fileName):
-        return os.path.exists(fileName)
-
-    if not(whereJson(nameJson)):
-
-        data=[]
-
-        with open(nameJson, 'w') as outFile:
-            json.dump(data, outFile)
-    
-    with open(nameJson, "r") as file:
-        jsonData = json.load(file)
-
-    return jsonData
 
 @route('/')
 @route('/index')
@@ -131,7 +112,7 @@ def articlesList():
 def articlesadd():
     """Renders the about page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now()
     )
 
 @route('/newsAdd')
@@ -141,8 +122,6 @@ def articles():
     return dict(
         year=datetime.now()
     )
-
-
 
 @route('/news')
 @view('news')
@@ -159,6 +138,7 @@ def articles():
         year=datetime.now().year,
         news_list=json_data
     )
+
 @route('/listUsers')
 @view('listUsers')
 def listUsers():
