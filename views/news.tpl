@@ -19,6 +19,7 @@
     <div class = "input-batton">
         <input type="submit" class="btnNewsAdd" onclick= "window.location.href ='/newsAdd'" value="Добавить" />
     </div>
+    <!-- Создание карточек с данными из json файла (в обратном порядке) -- >
 	<div class="row">
         %list = news_list
         %list.reverse()

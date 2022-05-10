@@ -52,6 +52,7 @@
 
         </div>
     </form>
+    <!-- Скрипт отслеживания количества напечатанных символов -->
             <script type = "text/javascript">
             function countChars(linkBlockInput, linkBlockOutput) {
 
