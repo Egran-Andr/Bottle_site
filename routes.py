@@ -112,7 +112,7 @@ def articlesList():
 def articlesadd():
     """Renders the about page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now()
     )
 
 @route('/newsAdd')
