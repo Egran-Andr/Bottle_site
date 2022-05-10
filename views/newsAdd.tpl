@@ -14,18 +14,19 @@
         %include header.tpl
         %import json
         %from bottle import post, request
+        %from datetime import datetime, timedelta
         <!-- link header -->
 
 
         <!-- Кнопка перехода на страницу покупки-->
-    <form class = "MainForm" action="/button" method="post">
+    <form class = "MainForm" action="/buttonNews" method="post">
 
         <div class="MainBlockAdd">
             <!-- link header -->
                 <!-- Поля ввода-->
                 <div class="input-field">
-                    <input name="AUTHOR" type="text" id="Author" maxlength=18 required />
-                    <label for="Author">Автор:</label>
+                    <input name="AUTHOR" type="text" id="Author" maxlength=18 minlength=3 placeholder="                           от 3 до 18 символов" required />
+                    <label for="Author">Заголовок:</label>
                 </div>
                 <div class="input-field">
                     <input name = "IMAGE" type="text" id="Image" required />
@@ -33,17 +34,17 @@
                 </div>
 
                 <div class="input-field">
-                    <input name = "DATE" type="date" id="Time" required />
-                    <label class="topic">Дата публикации:</label>
+                    <input name = "DATE" type="date" id="Time" max="{{year.date()}}" min = "{{year.date() - timedelta(days=365)}}" required />
+                    <label class="topic">Дата публикации: </label>
                 </div>
                 <div class="input-field">
                     <input name = "LINK" type="text" id="Link" required />
                     <label for="Link">Ссылка:</label>
                 </div>
-                <textarea class = "text-input" name = "HEADER" maxlength=137 required></textarea>
+                <textarea class = "text-input" name = "HEADER" maxlength=137 placeholder="137 символов" required></textarea>
 
             <div class="input-batton">
-                <input type="submit" class="btn btn-default" value="Записать" />
+                <input type="submit" class="btn btn-default" value="Добавить" />
                 <!-- Открываем теги для работы с javascript -->
             </div>
 

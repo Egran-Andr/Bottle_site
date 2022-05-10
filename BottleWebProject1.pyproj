@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject1</Name>
     <RootNamespace>BottleWebProject1</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -34,6 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="articlesmod.py" />
+    <Compile Include="readNews.py" />
     <Compile Include="routes.py" />
     <Compile Include="test_articles_f.py">
       <SubType>Code</SubType>
@@ -42,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_length_t.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_link_f.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="userRegistration.py">

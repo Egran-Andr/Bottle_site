@@ -139,7 +139,7 @@ def articlesadd():
 def articles():
     """Renders the about page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now()
     )
 
 

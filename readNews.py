@@ -1,14 +1,22 @@
 from bottle import post, request
+from bottle import redirect
 import re
 import pdb
 import json
 
-@post('/button')
+
 def checkLength(author, header):
     if len(author) <= 18 and len(header) <=137:
         return True
     else:
         return False
+def checkURL(url):
+    regex = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+    if re.fullmatch(regex, url):
+        return True
+    else:
+        return False
+@post('/buttonNews')
 def my_form():
     out:list=[]
     header=request.params.HEADER
@@ -17,13 +25,17 @@ def my_form():
     image = request.params.IMAGE
     link = request.params.LINK
     news = [header, author, date, link, image]
-    try:
-        with open ('news.json', "r", encoding='utf-8') as file:
-            out=json.load(file)
-    except:
-        print("clown")
-    out.append(news)
+    if (checkURL(link) == False or checkURL(image) == False):
+        return "Неверная ссылка или неверное изображение"
+    else:
+        try:
+            with open ('news.json', "r") as file:
+                out=json.load(file)
+        except:
+            print("clown")
+        out.append(news)
         
-    with open('news.json', "w") as file:
-        json.dump(out,file,indent=4)
-    return "Новость была добавлена"
+        with open('news.json', "w") as file:
+            json.dump(out,file,indent=4, ensure_ascii=False)
+
+        return redirect("/news")
