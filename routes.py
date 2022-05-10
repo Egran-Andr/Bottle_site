@@ -4,8 +4,7 @@ Routes and views for the bottle application.
 
 from bottle import route, view, template, static_file
 from datetime import datetime
-import json
-import os
+import json, os
 
 def SearchUsersJson(nameJson):
 
@@ -107,7 +106,7 @@ def articlesList():
 def articlesadd():
     """Renders the about page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now()
     )
 
 @route('/newsAdd')
@@ -115,7 +114,7 @@ def articlesadd():
 def articles():
     """Renders the about page."""
     return dict(
-        year=datetime.now().year
+        year=datetime.now()
     )
 
 @route('/news')

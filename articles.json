@@ -19,5 +19,33 @@
         "2022-04-29",
         "https://pulkovoairport.ru/upload/iblock/25c/gsom.jpg",
         "https://pulkovoairport.ru/about/press_center/news/34790/"
+    ],
+    [
+        "Тестовая статья",
+        "Иван Иванов",
+        "2022-05-12",
+        "1",
+        "https://www.codegrepper.com/code-examples/whatever/default+image+html+when+not+found"
+    ],
+    [
+        "Самые красивые направления для поездок весной",
+        "Александр Гаврилов",
+        "1927-06-08",
+        "https://bstatic.com/xdata/images/xphoto/1182x887/149368566.jpg?k=1d7cdcaa346006e390fae3343381d0ca76b14e4e31f933137557b886d293e558&o=?size=S",
+        "https://www.booking.com/articles/best-spring-destinations.ru.html?aid=356980&label=gog235jc-1DEghhcnRpY2xlcyiCAjjoB0ghWANowgGIAQGYASG4AQbIAQzYAQPoAQH4AQKIAgGoAgO4AsLQyZMGwAIB0gIkNDI2ZGU0Y2QtOTc4NC00OGYwLWExMmMtODY4Mjc2MjA1NDk22AIE4AIB"
+    ],
+    [
+        "Самые красивые направления для поездок весной",
+        "Иван Гаврилов",
+        "2022-04-29",
+        "https://upload.wikimedia.org/wikipedia/commons/8/80/140-P1020281_-_Flickr_-_Laurie_Nature_Bee.jpg",
+        "https://ru.wikiquote.org/wiki/%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%B0"
+    ],
+    [
+        "Новая статья",
+        "Новый Автор",
+        "2022-05-06",
+        "https://klike.net/uploads/posts/2020-05/1590132398_4.jpeg",
+        "https://samolet.ru/"
     ]
 ]

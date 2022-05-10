@@ -20,11 +20,13 @@
         <input type="submit" class="btnNewsAdd" onclick= "window.location.href ='/newsAdd'" value="Добавить" />
     </div>
 	<div class="row">
+        %list = news_list
+        %list.reverse()
         %for item in news_list:
  
         <div class="card1">
                 <div class="blockImg1">
-                    <img class="img1" src="{{item[4]}}">
+                    <img class="img1" src="{{item[4]}}" onerror="this.src='../static/images/default2.png'">
                 </div>
                <div class="textC2">
                     <div class="t1">

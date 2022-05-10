@@ -12,11 +12,12 @@
 <body>
         <!-- link header -->
         %include header.tpl
+        %from datetime import datetime,timedelta
         <!-- link header -->
 
 
         <!-- Кнопка перехода на страницу покупки-->
-    <form action="/button" method="post">
+    <form action="/button1" method="post">
         <div class="MainBlockAdd">
             <!-- link header -->
             <form class="MainForm">
@@ -29,9 +30,8 @@
                     <input name="Author" type="text" id="Autor" required />
                     <label for="Autor">Автор:</label>
                 </div>
-
                 <div class="input-field">
-                    <input name="Date" type="date" id="Time" required />
+                    <input name="Date" type="date" id="Time" min="{{year.date()-timedelta(days = 365)}}" max="{{datetime.date(datetime.now())}}" required />
                     <label class="topic">Дата публикации:</label>
                 </div>
 
