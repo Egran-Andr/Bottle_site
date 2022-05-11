@@ -52,7 +52,7 @@
     <Compile Include="test_length_t.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test_link_f.py">
+    <Compile Include="test_link_t.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="userRegistration.py">
