@@ -1,5 +1,5 @@
 <!-- начало подвала -->
-<div class="footer">
+<footer>
 	<div class="footer__container">
 		<div class="container__logo">
 			<span>Star</span>Lines
@@ -11,5 +11,5 @@
 			<a href="/listUsers">Пользователей онлайн: {{ countUsersJson }}</a>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- конец подвала -->

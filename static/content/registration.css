@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
-	box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  margin: 0;
+*, *:before, *:after {
+	list-style-type: none;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-	font-family: 'Montserrat', Arial;
 	background: #F6F5F7;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	height: 100vh;
+	display: block;
 }
 
 h1 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 	font-weight: bold;
 }
 
@@ -27,36 +32,62 @@ span {
 	font-size: 12px;
 }
 
-a {
-  text-decoration: underline;
-	color: blue;
+/* * * header * * */
+
+.header__container {
+	position: relative;
+	height: 80px;
+	width: 100%;
+}
+
+.header__container a {
+	position: absolute;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	line-height: 80px;
+	font-size: 42px;
+	padding: 0 20px;
+	height: 80px;
+	color: #000;
+}
+
+/* * * /header * * */
+
+article {
+	font-family: 'Montserrat', Arial;
 }
 
 .container {
-	background: #08457e;
 	border-radius: 25px;
-	box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
-	position: relative;
+	background: #08457e;
+	position: absolute;
 	overflow: hidden;
+	margin: auto;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
 	width: 768px;
 	max-width: 100%;
-	min-height: 560px;
+	max-height: 600px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
 }
 
 .form-container form {
-	flex-direction: column;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	display: flex;
 	background: #FFF;
 	padding: 0 50px;
+	display: flex;
 	height: 100%;
 }
 
 .form-container input {
 	padding: 12px 15px;
-	border: none;
 	margin: 8px 0;
+	border: none;
 	width: 100%;
 }
 
@@ -68,7 +99,7 @@ button {
 	letter-spacing: 1px;
 	padding: 12px 45px;
 	font-weight: bold;
-  margin-top: 20px;
+	margin-top: 20px;
 	font-size: 14px;
 	color: #FFF;
 }
@@ -133,29 +164,34 @@ button.ghost {
 }
 
 .input-check {
-  line-height: 50px;
-  font-size: 12px;
-  display: flex;
-  height: 50px;
-  width: 100%;
+	line-height: 50px;
+	font-size: 12px;
+	display: flex;
+	height: 50px;
+	width: 100%;
 }
 
 .input-check label {
-  text-align: center;
-  width: 90%;
+	text-align: center;
+	width: 90%;
+}
+
+.input-check label a {
+	text-decoration: underline;
+	color: blue;
 }
 
 .input-check input[name="Agreement"] {
-  background: #FF0;
-  margin: auto;
-  height: 20px;
-  width: 10%;
-  bottom: 0;
-  top: 0;
+	margin: auto;
+	height: 20px;
+	width: 20px;
+	bottom: 0;
+	top: 0;
 }
 
 .input-field {
 	position: relative;
+	display: flex;
 	line-height: 44px;
 	width: 250px;
 	height: 44px;
@@ -164,8 +200,8 @@ button.ghost {
 
 .input-field input {
 	border-bottom: 2px solid #d3d3d3;
-	padding: 5px 0;
-	color: #d3d3d3;
+	padding: 5px 25px 5px 0;
+	color: #D3D3D3;
 	width: 100%;
 }
 
@@ -173,11 +209,17 @@ button.ghost {
 	position: absolute;
 	font-family: "Arial";
 	transition: 0.2s all;
-	color: #d3d3d3;
+	color: #D3D3D3;
 	cursor: text;
 	width: 100%;
 	left: 0;
 	top: 0;
+}
+
+.input-field .countChars {
+	position: absolute;
+	color: #D3D3D3;
+	right: 0;
 }
 
 .input-field input:invalid {
@@ -192,7 +234,7 @@ button.ghost {
 
 .input-field input:focus ~ label,
 .input-field input:valid ~ label {
-  font-size: 14px;
-  color: #08457e;
-  top: -24px;
+	font-size: 14px;
+	color: #08457e;
+	top: -24px;
 }

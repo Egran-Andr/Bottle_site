@@ -1,5 +1,4 @@
-import unittest
-import userRegistration
+import unittest, userRegistration
 
 class Test_test_registration_T(unittest.TestCase):
 

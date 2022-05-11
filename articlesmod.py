@@ -2,6 +2,7 @@ from bottle import route,post, request,redirect
 import re
 import pdb
 import json
+from datetime import datetime
 
 def checklink(text):#проверка правельности ссылок
 
@@ -23,19 +24,21 @@ def correctdate(date:str): #проверка правильности даты
     else:
         return False
 
+
+def myFunc(e):
+  date_time_obj=datetime.strptime(e[2], "%Y-%m-%d").date()
+  return date_time_obj
+
+
 @post('/button1')
 def my_form():
     out:list=[]
-    #header = request.forms.get('Header')
     header=request.params.Header
-    #author = request.forms.get('Author')
     author=request.params.Author
     date = request.forms.get('Date')
-    #image = request.forms.get('ImageLink')
     image = request.params.ImageLink
-    #link = request.forms.get('Link')
     link = request.params.Link
-    if (checklink(link)==False): return "Ошибчный ввод полей!" #Проверка правильности ввода
+    if (checklink(link)==False & checklink(image)==False): return "Ошибчный ввод полей!" #Проверка правильности ввода
 
     articles:list =[header,author,date,image,link]#получение значений с формы
     
