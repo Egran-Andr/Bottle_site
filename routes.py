@@ -5,6 +5,11 @@ Routes and views for the bottle application.
 from bottle import route, view, template, static_file
 from datetime import datetime
 import json, os
+from datetime import datetime
+def myFunc(e):
+    #преобразование 3го обьекта листа(даты) из строки в дату
+  date_time_obj=datetime.strptime(e[2], "%Y-%m-%d").date()
+  return date_time_obj
 
 def SearchUsersJson(nameJson):
 
@@ -95,6 +100,7 @@ def articlesList():
     
     with open('articles.json', "r") as file:
         json_data=json.load(file)
+        json_data.sort(key=myFunc)
     return dict(
         year=datetime.now().year,
         articles_list=json_data
@@ -128,6 +134,7 @@ def articles():
             json_data=json.load(file)
         except:
             json_data=[]
+
     return dict(
         year=datetime.now().year,
         news_list=json_data

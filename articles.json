@@ -47,5 +47,33 @@
         "2022-05-06",
         "https://klike.net/uploads/posts/2020-05/1590132398_4.jpeg",
         "https://samolet.ru/"
+    ],
+    [
+        "Красивый кот",
+        "Егор Андреев",
+        "2022-02-02",
+        "https://bipbap.ru/wp-content/uploads/2017/08/0-70.jpg",
+        "https://www.ferra.ru/label/samolety"
+    ],
+    [
+        "Новость",
+        "Андреев Егор",
+        "2022-03-17",
+        "https://bipbap.ru/wp-content/uploads/2017/08/2-34.jpg",
+        "https://warspot.ru/categories/5-aviatsiya/articles"
+    ],
+    [
+        "Тест",
+        "Тест",
+        "2022-05-06",
+        "htts://warspot.ru/categories/5-aviatsiya/articles",
+        "http://localhost:52987/button1"
+    ],
+    [
+        "Заголовок",
+        "Автор",
+        "2022-05-05",
+        "https://warspot.ru/categories/5-aviatsiya/articles",
+        "https://warspot.ru/categories/5-aviatsiya/articles"
     ]
 ]

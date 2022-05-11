@@ -43,6 +43,12 @@
     <Compile Include="test_articles_t.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_link_false.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_link_true.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test_registration_F.py">
       <SubType>Code</SubType>
     </Compile>
