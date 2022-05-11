@@ -120,6 +120,7 @@ def articlesadd():
 def articles():
     """Renders the about page."""
     return dict(
+        a = "",
         year=datetime.now()
     )
 

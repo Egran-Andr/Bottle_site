@@ -1,12 +1,12 @@
-import unittest
+п»їimport unittest
 import readNews
 
 class Test_test_length(unittest.TestCase):
     def test_A(self):
-        #Список наборов [Заголовок, текст] данных для проверки на длину 
+        #РЎРїРёСЃРѕРє РЅР°Р±РѕСЂРѕРІ [Р—Р°РіРѕР»РѕРІРѕРє, С‚РµРєСЃС‚] РґР°РЅРЅС‹С… РґР»СЏ РїСЂРѕРІРµСЂРєРё РЅР° РґР»РёРЅСѓ 
         list_data = [["Title1", "Some text"], ["TitleTitleTitle", "Some text"], ["Title","SomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeText"],
                     ["TitleTitleTitle", "SomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeTextSomeText"]]
-        #Проверка элементов каждого набора на длину
+        #РџСЂРѕРІРµСЂРєР° СЌР»РµРјРµРЅС‚РѕРІ РєР°Р¶РґРѕРіРѕ РЅР°Р±РѕСЂР° РЅР° РґР»РёРЅСѓ
         for x in list_data:
             print(x[0] + " " + x[1] + "\n")
             self.assertTrue(readNews.checkLength(x[0], x[1]))

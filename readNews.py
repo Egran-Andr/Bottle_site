@@ -1,8 +1,9 @@
-from bottle import post, request
+from bottle import post, request, view
 from bottle import redirect
 import re
 import pdb
 import json
+from datetime import date
 
 #Функция проверки длины для полей автора и заголовка
 def checkLength(author, header):
@@ -18,19 +19,17 @@ def checkURL(url):
     else:
         return False
 
-@post('/buttonNews')
-
+@post('/newsAdd', method = "POST")
+@view('newsAdd')
 def my_form():
     out:list=[]
-
     header=request.params.HEADER
     author = request.params.AUTHOR
-    date = request.params.DATE
     image = request.params.IMAGE
     link = request.params.LINK
-    news = [header, author, date, link, image]
-
-    if (checkURL(link) != False or checkURL(image) != False):
+    news = [header, author, str(date.today()), link, image]
+    a = ""
+    if (checkURL(link) != False and checkURL(image) != False):
         try:
             with open ('news.json', "r") as file:
                 out=json.load(file)
@@ -40,4 +39,8 @@ def my_form():
         
         with open('news.json', "w") as file:
             json.dump(out,file,indent=4, ensure_ascii=False)
-    return redirect("/news")
+        return redirect("/news")
+    else:
+        return dict(
+        a = "1 или 2 ссылки неверные"
+        )

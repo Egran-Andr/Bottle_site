@@ -19,8 +19,11 @@
 
 
         <!-- Кнопка перехода на страницу покупки-->
-    <form class = "MainForm" action="/buttonNews" method="post">
-
+    <form class = "MainForm" action="" method="post">
+        <script type = "text/javascript">
+        if ("{{ a }}" != "")
+            alert("{{ a }}")
+        </script>
         <div class="MainBlockAdd">
             <!-- link header -->
                 <!-- Поля ввода-->
@@ -35,16 +38,11 @@
                 </div>
 
                 <div class="input-field">
-                    <input name = "DATE" type="date" id="Time" max="{{year.date()}}" min = "{{year.date() - timedelta(days=365)}}" required />
-                    <label class="topic">Дата публикации: </label>
-                </div>
-                <div class="input-field">
                     <input name = "LINK" type="text" id="Link" required />
                     <label for="Link">Ссылка:</label>
                 </div>
                 <span class="textField">Символов использовано: 0/137</span>
                 <textarea class = "text-input" name = "HEADER" id="textFieldInput" maxlength=137 onkeyup="countChars('#textFieldInput','.textField')" placeholder="137 символов" required></textarea>
-
             <div class="input-batton">
                 <input type="submit" class="btn btn-default"  value="Добавить"  />
                 <!-- Открываем теги для работы с javascript -->
