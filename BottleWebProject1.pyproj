@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="articles.json" />
+    <Content Include="DO_NOT_USE_IT_news.json" />
     <Content Include="news.json" />
     <Content Include="README.md" />
     <Content Include="requirements.txt" />
@@ -92,6 +93,7 @@
     <Content Include="static\images\background_aircraft.jpg" />
     <Content Include="static\images\background_employee.jpg" />
     <Content Include="static\images\background_plaj.jpg" />
+    <Content Include="static\images\default2.png" />
     <Content Include="static\images\Krasnoyarsk.jpg" />
     <Content Include="static\images\Moscow.jpg" />
     <Content Include="static\images\planereg.jpg" />

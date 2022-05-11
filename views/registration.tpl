@@ -2,23 +2,21 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="static/content/registration.css"> <!-- СSS File -->
-		<script src="/static/scripts/modernizr-2.6.2.js"></script>
         <title>Регистрация</title>
     </head>
     <body>
-        <script type="text/javascript">
-            if ("{{ text }}" != "text?")
-                alert("{{ text }}");
-        </script>
         <header>
             <div class="header__container"> <!-- Кнопка возвращения на главный экран -->
                 <a href="/index">StarLines</a>
             </div>
         </header>
         <article>
+            <script type="text/javascript">
+                if ("{{ text }}" != "text?")
+                    alert("{{ text }}");
+            </script>
             <div class="container"> <!-- Левая часть формы -->
                 <div class="form-container sign-in-container">
                     <form action="" method="POST">

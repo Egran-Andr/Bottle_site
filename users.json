@@ -63,5 +63,10 @@
         "TestUser",
         "mail@mail.com",
         "123"
+    ],
+    [
+        "Gavrilov2022",
+        "example200304@mail.com",
+        "12345"
     ]
 ]

@@ -209,7 +209,7 @@ button.ghost {
 	position: absolute;
 	font-family: "Arial";
 	transition: 0.2s all;
-	color: #D3D3D3;
+	color: #B0B0B0;
 	cursor: text;
 	width: 100%;
 	left: 0;
@@ -218,7 +218,7 @@ button.ghost {
 
 .input-field .countChars {
 	position: absolute;
-	color: #D3D3D3;
+	color: #B0B0B0;
 	right: 0;
 }
 
